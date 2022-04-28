@@ -1,7 +1,8 @@
 # space-saver
-Utilities for efficiently managing storage.
+#### Utilities for efficiently managing storage
+---
 
-While data storage needs are ever increasing, there are certain steps that can be taken to efficiently store existing data.
+While data storage needs are ever increasing, there are certain steps that can be taken to efficiently store and transfer existing data.
 
 The most important action is to compress data that is not immediately needed. Escpecially, compressing file types that contain text data e.g., any file containing sequences, can reduce a file's footprint by **40–90%**.
 This also plays an important role when data is uploaded to AWS (or any other cloud file storage), as it drastically reduces transfer times and monthly storage costs, **which needs to be accounted for years and decades**!

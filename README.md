@@ -5,7 +5,7 @@
 While data storage needs are ever increasing, there are certain steps that can be taken to efficiently store and transfer existing data.
 
 The most important action is to compress data that is not immediately needed. Escpecially, compressing file types that contain text data e.g., any file containing sequences, can reduce a file's size by **40–90%**.
-This also plays an important role when data is uploaded to AWS (or any other cloud file storage), as it drastically reduces transfer times and monthly storage costs, **which needs to be accounted for years and decades**!
+This also plays an important role when data is uploaded to cloud storage, as it drastically reduces transfer times and monthly storage costs, **which needs to be accounted for years and decades**!
 
 The compression script includes many of the common file formats which give space savings, while excluding binary formats like `.bam`.
 The script utilizes [pigz](https://zlib.net/pigz/) which is a parallel implementation of gzip and provides a _P_ fold increase in compression speed, where _P_ is the number of CPU cores.

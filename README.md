@@ -14,9 +14,12 @@ The script was tested on macOS and Linux, and pigz is available on Changrila2, S
 For Sherlock and SCG, the script has to be executed as a Slurm job (not necessary when using the dedicated SCG node), please request HPC CPUs based on the `-p` value set in the script.  
 
 Default value for `-p` set to `4` to be suitable for personal machines and servers. Number of CPUs `-p` tested upto 32 cores.
-
-To use the scripts, copy them to the directory within which all compression/decompression needs to take place.  
-The scripts will find all the files matching the extensions, including subdirectories.
+  
+### Usage
+To use the scripts, copy them to your home directory.  
+`chmod +x fast_compress.sh fast_decompress.sh`  
+`./fast_compress.sh <path_to_dir_to_compress>`  
+From the top level directory path, the scripts will find all the files matching the extensions, including in subdirectories.
 
 
 ### pigz macOS Installation

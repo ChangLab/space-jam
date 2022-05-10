@@ -7,7 +7,7 @@ While data storage needs are ever increasing, there are certain steps that can b
 The most important action is to compress data that is not immediately needed. Escpecially, compressing file types that contain text data e.g., any file containing sequences, can reduce a file's size by **40–90%**.
 This also plays an important role when data is uploaded to AWS (or any other cloud file storage), as it drastically reduces transfer times and monthly storage costs, **which needs to be accounted for years and decades**!
 
-The compression script includes many of the common file formats which gives space savings, while excluding binary formats like `.bam`.
+The compression script includes many of the common file formats which give space savings, while excluding binary formats like `.bam`.
 The script utilizes [pigz](https://zlib.net/pigz/) which is a parallel implementation of gzip and provides a _P_ fold increase in compression speed, where _P_ is the number of CPU cores.
 
 The script was tested on macOS and Linux, and pigz is available on Changrila2, Sherlock and SCG.  
@@ -15,5 +15,10 @@ For Sherlock and SCG, the script has to be executed as a Slurm job (not necessar
 
 Default value for `-p` set to `4` to be suitable for personal machines and servers. Number of CPUs `-p` tested upto 32 cores.
 
+To use the scripts, copy them to the directory within which all compression/decompression needs to take place.  
+The scripts will find all the files matching the extensions, including subdirectories.
+
+
+### pigz macOS Installation
 To install pigz on Intel or Apple Silicon (M1 and newer) Macs, first install [Homebrew](https://brew.sh) and then do `brew install pigz`.
 

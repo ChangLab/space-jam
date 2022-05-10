@@ -17,8 +17,8 @@ Default value for `-p` set to `4` to be suitable for personal machines and serve
   
 ### Usage
 To use the scripts, copy them to your home directory.  
-`chmod +x fast_compress.sh fast_decompress.sh`  
-`./fast_compress.sh <path_to_dir_to_compress>`  
+`chmod +x fast_compress_files.sh fast_decompress_files.sh`  
+`./fast_compress_files.sh <path_to_dir_to_compress>`  
 From the top level directory path, the scripts will find all the files matching the extensions, including in subdirectories.
 
 

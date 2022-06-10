@@ -1,6 +1,6 @@
 # space-jam ☄️
 #### Utilities for efficiently managing storage
----
+
 
 While data storage needs are ever increasing, there are certain steps that can be taken to efficiently store and transfer existing data.
 

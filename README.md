@@ -1,4 +1,4 @@
-# space-jam ☄️
+# Space Jam ☄️
 #### Utilities for efficiently managing storage
 
 

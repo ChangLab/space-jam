@@ -12,8 +12,9 @@ if [ $# == 0 ] ; then
     exit 1;
 fi
 
-find "$1" -type f -not -path '*python*'                         \
-				'(' -iname '*.adj'		\
+find "$1" -type f -not -path '*python*'     \
+			       '(' -iname '*.adj'		\
+			    -o -iname '*.bai'			\
 				-o -iname '*.bed'			\
 				-o -iname '*.bedGraph' 		\
 				-o -iname '*.broadPeak' 	\
@@ -48,3 +49,4 @@ find "$1" -type f -not -path '*python*'                         \
 				-o -iname '*.xls' 	 		\
 				-o -iname '*.xlsx' ')' 		\
 		-exec pigz -p4 -f -v {} ';'
+    
